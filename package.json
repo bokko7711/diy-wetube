@@ -2,10 +2,7 @@
   "name": "wetube",
   "version": "1.0.0",
   "description": "youtube cloning by nodeJS, pug, mongodb,...",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "init.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bokko7711/diy-wetube.git"
@@ -17,6 +14,17 @@
   },
   "homepage": "https://github.com/bokko7711/diy-wetube#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15",
+    "core-js": "^3.11.0",
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "helmet": "^4.4.1",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node init.js"
   }
 }
